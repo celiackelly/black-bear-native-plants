@@ -1982,7 +1982,7 @@ input, select, textarea {
 		.icon.featured {
 			cursor: default;
 			display: block;
-			margin: 0 0 1.5em 0;
+			margin: 0 0 1.5rem 0;
 			opacity: 0.35;
 			text-align: center;
 		}
@@ -2061,6 +2061,7 @@ input, select, textarea {
 				height: 1em;
 				line-height: 1.5em;
 				width: 1em;
+				margin: .5rem;
 			}
 
 /* Buttons */
@@ -2613,9 +2614,9 @@ input, select, textarea {
 					text-decoration: none;
 				}
 
-			#banner .inner footer {
+			/* #banner .inner footer {
 				margin: 2em 0 0 0;
-			}
+			} */
 
 /* Main */
 
