@@ -267,6 +267,8 @@ input, select, textarea {
 		z-index: 3;
 	}
 
+
+
 /* Row */
 
 	.row {
@@ -1794,6 +1796,15 @@ input, select, textarea {
 				font-size: 3.5em;
 				opacity: 0.35;
 			}
+	
+	#intro footer {
+		display: flex;
+		justify-content: center;
+	}
+
+	#intro footer ul.buttons {
+		margin-bottom: 2rem;
+	}
 
 	footer > :last-child {
 		margin-bottom: 0;
@@ -1801,6 +1812,27 @@ input, select, textarea {
 
 	footer.major {
 		padding-top: 3em;
+	}
+
+/* I added this.  Need to account for mobile too */
+	#footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	#footer div {
+		display: flex;
+	}
+
+	#footer p {
+		margin: 0;
+		font-size: 1rem;
+	}
+
+	#footer address {
+		padding: 1rem;
+		text-align: left;
 	}
 
 /* Form */
@@ -1898,6 +1930,11 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 		}
+	
+		.image-main {
+			width: 85%;
+			margin-top: 2rem;
+		}
 
 /* Icon */
 
@@ -1976,27 +2013,37 @@ input, select, textarea {
 				color: #fff;
 			}
 
-				.icon.circle.fa-google-plus-g:hover {
-					background: #df7b77;
+				/* .icon.circle.fa-phone {
+					background: #5fb69c;
+					color: #fff;
 				}
 
-			.icon.circle.fa-github {
+			.icon.circle.fa-envelope {
 				background: #dcad8b;
 				color: #fff;
 			}
 
-				.icon.circle.fa-github:hover {
+				.icon.circle.fa-envelope:hover {
 					background: #e1b89b;
 				}
 
-			.icon.circle.fa-dribbble {
+			.icon.circle.fa-location-arrow {
 				background: #da83ae;
 				color: #fff;
 			}
 
-				.icon.circle.fa-dribbble:hover {
+				.icon.circle.fa-location-arrow:hover {
 					background: #df93b8;
-				}
+				} */
+		
+		.icon.contact {
+			color: #645862;
+			border-bottom: 0;
+			display: inline-block;
+			font-size: 1.25em;
+			text-decoration: none;
+			width: 2.25em;
+		}
 
 		.icon.featured {
 			cursor: default;
@@ -2334,7 +2381,7 @@ input, select, textarea {
 		z-index: 10000;
 	}
 
-		#header h1 {
+		h1 {
 			font-weight: 900;
 			margin: 0;
 			text-shadow: #000 2px 2px 5px;
@@ -2486,7 +2533,7 @@ input, select, textarea {
 				border-left: solid 0.5em transparent;
 				border-right: solid 0.5em transparent;
 				content: '';
-				left: 0.75em;
+				right: 0.75em;
 				position: absolute;
 				top: -0.45em;
 			}
@@ -2690,7 +2737,8 @@ input, select, textarea {
 	#footer {
 		background: #E8EEF4;
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
+		/* padding: 5em 5em 10em 5em; */
+		padding: 5em 5em 5em 5em;
 		text-align: center;
 	}
 
@@ -3010,6 +3058,11 @@ input, select, textarea {
 
 			#footer {
 				padding: 4em 1.5em;
+				flex-direction: column;
+			}
+
+			#footer ul.icons, footer ul.copyright {
+				padding-left: 4rem;
 			}
 
 		/* Nav */
@@ -3374,7 +3427,7 @@ input, select, textarea {
 
 				#footer .copyright li {
 					display: block;
-					margin: 1em 0 0 0;
+					/* margin: 1em 0 0 0; */
 					padding: 0;
 					border: 0;
 				}
